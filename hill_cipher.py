@@ -9,7 +9,6 @@ def encrypt(plain_text,key_list,row,column):
     for i in plain_text:
         plain_text_value.append(alphabets.index(i))
     plain_text_root = m.sqrt(len(plain_text_value))
-
     
     plain_text_value_matrix = numpy.array_split(plain_text_value,plain_text_root)
     plain_text_value_matrix_array = []
@@ -17,9 +16,7 @@ def encrypt(plain_text,key_list,row,column):
         plain_text_value_matrix_array.append(list(array))
 
     
-    
     cipher_value_list_matrix = []
-
 
 
     for i in range(len(plain_text_value_matrix_array)):
@@ -42,13 +39,7 @@ def encrypt(plain_text,key_list,row,column):
 
     cipher_text=""
     return cipher_text.join(cipher_value_string)
-
-
-    # for i in range(len(cipher_value_list)):
-        
-
-
-    # for i in range     
+    
 
 def decrypt():
     pass
@@ -74,3 +65,7 @@ if method == 1:
         key_list.append(data)
     result = encrypt(plain_text,key_list,row,column)
     print("Encrypted text is:- "result)
+elif method == 2:
+    decrypt()
+else:
+    print("Wrong input")
