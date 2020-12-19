@@ -1,4 +1,4 @@
-
+#first install prettytable (pip install prettytable)
 # C = Cipher text
 # M = message/plaintext
 # e = public key
